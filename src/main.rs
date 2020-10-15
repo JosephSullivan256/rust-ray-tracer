@@ -17,13 +17,13 @@ mod hittables;
 use hittables::sphere::Sphere;
 use hittables::plane::Plane;
 
-const N: u32 = 10;
+const N: u32 = 20;
 const DEPTH: u32 = 8;
 
 fn main() {
     println!("ray-tracer");
 
-    let mut buffer : image::RgbImage = image::ImageBuffer::new(256, 256);
+    let mut buffer : image::RgbImage = image::ImageBuffer::new(2048, 2048);
     //let light = Light::new(1.0, 1.0, 1.0);
     //buffer.put_pixel(20, 20, light.toRGB());
 
